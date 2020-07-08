@@ -1,10 +1,10 @@
 {
-  "name": "gingerwig-portfolio",
-  "description": "Three.js project using Brunch",
+  "name": "wayne-povey_cv",
+  "description": "CV and portfolio using three.js",
   "private": true,
   "author": "Gingerwig",
   "version": "0.0.1",
-  "repository": "https://github.com/waynePovey/portfolio",
+  "repository": "https://github.com/waynePovey/waynepovey.github.io",
   "scripts": {},
   "dependencies": {
     "dat.gui": "^0.7.7",
