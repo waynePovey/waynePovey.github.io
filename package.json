@@ -1,0 +1,19 @@
+{
+  "name": "gingerwig-portfolio",
+  "description": "Three.js project using Brunch",
+  "private": true,
+  "author": "Gingerwig",
+  "version": "0.0.1",
+  "repository": "https://github.com/waynePovey/portfolio",
+  "scripts": {},
+  "dependencies": {
+    "dat.gui": "^0.7.7",
+    "es6": "0.0.7",
+    "three": "^0.117.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.21.2"
+  }
+}
