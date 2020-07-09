@@ -5,7 +5,7 @@ let renderer;
 const fov = 40;
 let aspect;
 const near = 0.1;
-const far = 1000;
+const far = 20000000;
 let gui;
 let cube0;
 let cube1;
@@ -16,30 +16,38 @@ function init() {
   container = document.querySelector('#container');
   
   scene = new THREE.Scene();
-  scene.background = new THREE.Color(0xb2f5f2);
-    
-  cube0 = new createMesh(
-    new THREE.BoxBufferGeometry(2, 2, 2),
-    new THREE.MeshStandardMaterial({color: 0xa7bf37}),
-    -5, 1, 0
-  );
 
-  cube1 = new createMesh(
-    new THREE.BoxBufferGeometry(2, 2, 2),
-    new THREE.MeshStandardMaterial({map: loadTexture('../assets/textures/test_texture.png', 16)}),
+  let textureLoader = new THREE.TextureLoader();
+  const ft = textureLoader.load("../assets/textures/purple_space_skybox/purple_space_front5.png", 16);
+  const bk = textureLoader.load("../assets/textures/purple_space_skybox/purple_space_back6.png", 16);
+  const up = textureLoader.load("../assets/textures/purple_space_skybox/purple_space_top3.png", 16);
+  const dn = textureLoader.load("../assets/textures/purple_space_skybox/purple_space_bottom4.png", 16);
+  const rt = textureLoader.load("../assets/textures/purple_space_skybox/purple_space_right1.png", 16);
+  const lf = textureLoader.load("../assets/textures/purple_space_skybox/purple_space_left2.png", 16);
+  
+  let materialArray = [
+    new THREE.MeshBasicMaterial({map: rt, side: THREE.BackSide}),
+    new THREE.MeshBasicMaterial({map: lf, side: THREE.BackSide}),
+    new THREE.MeshBasicMaterial({map: up, side: THREE.BackSide}),
+    new THREE.MeshBasicMaterial({map: dn, side: THREE.BackSide}),
+    new THREE.MeshBasicMaterial({map: ft, side: THREE.BackSide}),
+    new THREE.MeshBasicMaterial({map: bk, side: THREE.BackSide}),
+  ];
+
+  skybox = new createMesh(
+    new THREE.BoxBufferGeometry(10000000, 10000000, 10000000),
+    materialArray,
     5, 1, 0
   );
-
 
   loadModel(
     '../assets/models/p38Lightning/completeP38.glb'  
   );
-
   
   createGui();
-  createCamera(fov, container.clientWidth, container.clientHeight, near, far, 2, 6, -10);
+  createCamera(fov, container.clientWidth, container.clientHeight, near, far, 0, 20, 50);
   createControls();
-  createLights(5, 5, 5, 2);
+  createLights(5, 5, 5, 3);
   createRenderer(true, window.devicePixelRatio);
     
   renderer.setAnimationLoop(() => {
@@ -49,13 +57,7 @@ function init() {
 }
 
 function update() {
-  cube0.rotation.z += 0.01;
-  cube0.rotation.y += 0.01;
-  cube0.rotation.z += 0.01;
-
-  cube1.rotation.z -= 0.01;
-  cube1.rotation.y -= 0.01;
-  cube1.rotation.z -= 0.01;
+  
 }
 
 function render() {
@@ -83,7 +85,9 @@ function createCamera(fov, width, height, near, far, x, y, z) {
 function createLights(x, y, z, intensity) {
   const dLight = new THREE.DirectionalLight(0xffffff, intensity);
   dLight.position.set(x, y, z);
-  const aLight = new THREE.HemisphereLight(0xddeeff, 0x202020, intensity);
+  // const aLight = new THREE.HemisphereLight(0xddeeff, 0x202020, intensity);
+
+  const aLight = new THREE.AmbientLight(0xffffff, intensity);
   
   scene.add(aLight);
   scene.add(dLight);

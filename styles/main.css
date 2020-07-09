@@ -1,13 +1,18 @@
+@font-face {
+  font-family: "Open Sans Condensed";
+  src: url('../assets/fonts/OpenSansCondensed-Light.ttf');
+}
+
 body {
     color: white;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Open Sans Condensed';
     margin: 0px;
     overflow: hidden;
     text-align: center;
   }
   
   h1 {
-    color: #000000;
+    color: white;
     position: absolute;
     width: 100%;
     z-index: 1;
