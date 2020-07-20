@@ -17,17 +17,7 @@ async function init() {
   scene.add(skybox);
   
   loadModel('../assets/models/flying_saucer/flying_saucer.glb', 'flyingSaucer', 0, 0, 0, 1);
-  
-  loadModel('../assets/models/asteroid/asteroid.glb', 'asteroid01', 20,   -25,   20, 2);
-  loadModel('../assets/models/asteroid/asteroid.glb', 'asteroid02', -20,    0,   30, 5);
-  loadModel('../assets/models/asteroid/asteroid.glb', 'asteroid03', -25,   -5,  -30, 1);
-  loadModel('../assets/models/asteroid/asteroid.glb', 'asteroid04', 0,     10,  -40, 1);
-  loadModel('../assets/models/asteroid/asteroid.glb', 'asteroid05', 60,   -10, -50, 3);
-  loadModel('../assets/models/asteroid/asteroid.glb', 'asteroid06', 20,     5, -60, 6);
-  loadModel('../assets/models/asteroid/asteroid.glb', 'asteroid07', -40,    5,  10, 2);
-  loadModel('../assets/models/asteroid/asteroid.glb', 'asteroid08', -100, -17,  0,  9);
-
-
+  loadModel('../assets/models/asteroid/asteroid.glb', 'asteroids', 0, 0, 0, 2);
   
   createGui();
   createCamera(fov, container.clientWidth, container.clientHeight, near, far, 0, 20, 50);
@@ -41,16 +31,22 @@ async function init() {
     update();
     render();
   });
-  
 }
 
 function update() {
-  // skybox.rotation.y += 0.0001;
   // if (scene.getObjectByName('flyingSaucer', true)) {
   //   const flyingSaucer = scene.getObjectByName('flyingSaucer', true);
   //   flyingSaucer.rotation.x += 0.0002;
   //   flyingSaucer.rotation.y += 0.0002;
   // }
+
+  if(scene.getObjectByName('asteroids', true)) {
+
+    for(let i = 0; i < 32; i++ ) {
+      scene.getObjectByName('asteroids', true).children[i].rotation.x += (0.0005 + (i * 0.0001));
+      scene.getObjectByName('asteroids', true).children[i].rotation.y += (0.0005 - (i * 0.0001));
+    }
+  }
 }
 
 function render() {
@@ -92,7 +88,7 @@ function createCamera(fov, width, height, near, far, x, y, z) {
 }
 
 function createLighting() {
-  const star = new THREE.DirectionalLight(0xfcff8a, 2);
+  const star = new THREE.DirectionalLight(0xFFE7BB, 2);
   star.position.set(-300, 0, 0);
   scene.add(star);
 
@@ -145,6 +141,7 @@ function loadModel(modelUrl, name, x, y, z, scale) {
     gltf.scene.scale.z = scale;
     gltf.scene.name = name;
 
+    console.log(gltf.scene);
     scene.add(gltf.scene);
   });
 }
