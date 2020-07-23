@@ -96,7 +96,6 @@ function update() {
 
 onkeydown = onkeyup = (event) => {
   events[event.key] = event.type == 'keydown';
-  console.log(event.type + ', ' + event.key + events[event.key]);
 }
 
 function render() {
