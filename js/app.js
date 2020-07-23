@@ -6,6 +6,12 @@ const fov = 40;
 const near = 0.1;
 const far = 20000000;
 let flyingSaucer;
+let zVel = 0;
+let yRot = 0;
+let braking = false;
+let roll = 0;
+let nullRoll = false;
+let events = {};
 
 async function init() {
   container = document.querySelector('#container');
@@ -20,13 +26,15 @@ async function init() {
   loadModel('../assets/models/asteroid/asteroid.glb', 'asteroids', 0, 0, 0, 2);
   
   createGui();
-  createCamera(fov, container.clientWidth, container.clientHeight, near, far, 0, 20, 50);
+  createCamera(fov, container.clientWidth, container.clientHeight, near, far, 40, 10, 10);
   createControls();
   createLighting();
   createRenderer(true, window.devicePixelRatio);
   
   console.log(scene);
-
+  window.addEventListener('keydown', onkeydown, false);
+  window.addEventListener('keyup', onkeyup, false);
+  
   renderer.setAnimationLoop(() => {
     update();
     render();
@@ -34,19 +42,61 @@ async function init() {
 }
 
 function update() {
-  // if (scene.getObjectByName('flyingSaucer', true)) {
-  //   const flyingSaucer = scene.getObjectByName('flyingSaucer', true);
-  //   flyingSaucer.rotation.x += 0.0002;
-  //   flyingSaucer.rotation.y += 0.0002;
-  // }
+  if(scene.getObjectByName('flyingSaucer', true)) {
+    scene.getObjectByName('flyingSaucer', true).translateZ(zVel);
+    
+    if(events['w'] && zVel > -0.2) {
+      zVel -= 0.001;
+    }
 
-  if(scene.getObjectByName('asteroids', true)) {
+    if(events['s'] && zVel < 0.2) {
+      zVel += 0.001;
+    }
 
-    for(let i = 0; i < 32; i++ ) {
-      scene.getObjectByName('asteroids', true).children[i].rotation.x += (0.0005 + (i * 0.0001));
-      scene.getObjectByName('asteroids', true).children[i].rotation.y += (0.0005 - (i * 0.0001));
+    if(!events['w'] && !events['s'] && zVel !== 0) {
+      if(zVel > 0) {
+        zVel -= 0.001;
+      } else if(zVel < 0) {
+        zVel += 0.001;
+      }
+    }
+
+    scene.getObjectByName('flyingSaucer', true).rotateOnWorldAxis(new THREE.Vector3(0, 1, 0), yRot);
+    scene.getObjectByName('flyingSaucer', true).rotateZ(roll);
+
+    if(events['a'] && yRot < 0.02) {
+      yRot += 0.0002;
+    }
+     
+    if(events['d'] && yRot > -0.02) {
+      yRot -= 0.0002;
+    }
+
+    if(!events['d'] && !events['a'] && yRot !== 0) {
+      if(yRot > 0) {
+        yRot -= 0.0002;
+      } else if(yRot < 0) {
+        yRot += 0.0002;
+      }
     }
   }
+  
+  if(scene.getObjectByName('asteroids', true)) {
+    
+    for(let i = 0; i < 32; i++ ) {
+      scene.getObjectByName('asteroids', true).children[i].rotateX(0.0005 + (i * 0.0001));
+      scene.getObjectByName('asteroids', true).children[i].rotateY(0.0005 - (i * 0.0001));
+    }
+  }
+}
+
+
+/*************************/
+/******* CONTROLS ****** */
+
+onkeydown = onkeyup = (event) => {
+  events[event.key] = event.type == 'keydown';
+  console.log(event.type + ', ' + event.key + events[event.key]);
 }
 
 function render() {
