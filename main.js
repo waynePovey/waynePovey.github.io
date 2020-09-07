@@ -272,19 +272,22 @@ var HomeComponent = /** @class */ (function () {
         }, 500);
     };
     HomeComponent.ɵfac = function HomeComponent_Factory(t) { return new (t || HomeComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"])); };
-    HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HomeComponent, selectors: [["app-home"]], decls: 5, vars: 1, consts: [[3, "ngClass"], [3, "click"]], template: function HomeComponent_Template(rf, ctx) { if (rf & 1) {
+    HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HomeComponent, selectors: [["app-home"]], decls: 7, vars: 1, consts: [[3, "ngClass"], [3, "click"]], template: function HomeComponent_Template(rf, ctx) { if (rf & 1) {
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h1");
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "WAYNE POVEY");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Hi, I'm Wayne Povey. Welcome to my interactive portfolio");
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "button", 1);
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function HomeComponent_Template_button_click_3_listener() { return ctx.play(); });
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "ENTER");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "p");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "(Still in early development. Be wary of bugs and missing features!)");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "button", 1);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function HomeComponent_Template_button_click_5_listener() { return ctx.play(); });
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "ENTER");
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         } if (rf & 2) {
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", ctx.initialised ? "visible" : "hidden");
-        } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["NgClass"]], styles: ["div[_ngcontent-%COMP%] {\n  align-items: center;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-evenly;\n  width: 100%;\n  height: 100%;\n  background: cadetblue;\n}\ndiv.hidden[_ngcontent-%COMP%] {\n  opacity: 0;\n  transition: opacity 0.5s ease-in;\n}\ndiv.visible[_ngcontent-%COMP%] {\n  opacity: 1;\n  transition: opacity 0.5s ease-in;\n}\ndiv[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n  font-size: 5em;\n  color: white;\n  text-align: center;\n}\ndiv[_ngcontent-%COMP%]   button[_ngcontent-%COMP%] {\n  border: 0.1em solid white;\n  border-radius: 0.4em;\n  max-width: -webkit-fit-content;\n  max-width: -moz-fit-content;\n  max-width: fit-content;\n  background: transparent;\n  color: white;\n  font-family: Open Sans Light;\n  font-size: 3em;\n}\ndiv[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]:focus {\n  outline: none;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9ob21lL2hvbWUuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxtQkFBQTtFQUNBLGFBQUE7RUFDQSxzQkFBQTtFQUNBLDZCQUFBO0VBQ0EsV0FBQTtFQUNBLFlBQUE7RUFDQSxxQkFBQTtBQUNKO0FBQ0k7RUFDSSxVQUFBO0VBQ0EsZ0NBQUE7QUFDUjtBQUVJO0VBQ0ksVUFBQTtFQUNBLGdDQUFBO0FBQVI7QUFHSTtFQUNJLGNBQUE7RUFDQSxZQUFBO0VBQ0Esa0JBQUE7QUFEUjtBQUlJO0VBQ0kseUJBQUE7RUFDQSxvQkFBQTtFQUNBLDhCQUFBO0VBQUEsMkJBQUE7RUFBQSxzQkFBQTtFQUNBLHVCQUFBO0VBQ0EsWUFBQTtFQUNBLDRCQUFBO0VBQ0EsY0FBQTtBQUZSO0FBSVE7RUFDSSxhQUFBO0FBRloiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL2hvbWUvaG9tZS5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbImRpdiB7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1ldmVubHk7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgaGVpZ2h0OiAxMDAlO1xuICAgIGJhY2tncm91bmQ6IGNhZGV0Ymx1ZTtcblxuICAgICYuaGlkZGVuIHtcbiAgICAgICAgb3BhY2l0eTogMDtcbiAgICAgICAgdHJhbnNpdGlvbjogb3BhY2l0eSAwLjVzIGVhc2UtaW47XG4gICAgfVxuXG4gICAgJi52aXNpYmxlIHtcbiAgICAgICAgb3BhY2l0eTogMTtcbiAgICAgICAgdHJhbnNpdGlvbjogb3BhY2l0eSAwLjVzIGVhc2UtaW47XG4gICAgfVxuXG4gICAgaDEge1xuICAgICAgICBmb250LXNpemU6IDVlbTtcbiAgICAgICAgY29sb3I6IHdoaXRlO1xuICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgfVxuXG4gICAgYnV0dG9uIHtcbiAgICAgICAgYm9yZGVyOiAwLjFlbSBzb2xpZCB3aGl0ZTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogMC40ZW07XG4gICAgICAgIG1heC13aWR0aDogZml0LWNvbnRlbnQ7XG4gICAgICAgIGJhY2tncm91bmQ6IHRyYW5zcGFyZW50O1xuICAgICAgICBjb2xvcjogd2hpdGU7XG4gICAgICAgIGZvbnQtZmFtaWx5OiBPcGVuIFNhbnMgTGlnaHQ7XG4gICAgICAgIGZvbnQtc2l6ZTogM2VtO1xuXG4gICAgICAgICY6Zm9jdXMge1xuICAgICAgICAgICAgb3V0bGluZTogbm9uZTtcbiAgICAgICAgfVxuICAgIH1cbn1cbiJdfQ== */"] });
+        } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["NgClass"]], styles: ["div[_ngcontent-%COMP%] {\n  align-items: center;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-evenly;\n  width: 100%;\n  height: 100%;\n  background: cadetblue;\n}\ndiv.hidden[_ngcontent-%COMP%] {\n  opacity: 0;\n  transition: opacity 0.5s ease-in;\n}\ndiv.visible[_ngcontent-%COMP%] {\n  opacity: 1;\n  transition: opacity 0.5s ease-in;\n}\ndiv[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n  font-size: 5em;\n  color: white;\n  text-align: center;\n}\ndiv[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  color: white;\n  font-size: 2em;\n}\ndiv[_ngcontent-%COMP%]   button[_ngcontent-%COMP%] {\n  border: 0.1em solid white;\n  border-radius: 0.4em;\n  max-width: -webkit-fit-content;\n  max-width: -moz-fit-content;\n  max-width: fit-content;\n  background: transparent;\n  color: white;\n  font-family: Open Sans Light;\n  font-size: 3em;\n}\ndiv[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]:focus {\n  outline: none;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9ob21lL2hvbWUuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxtQkFBQTtFQUNBLGFBQUE7RUFDQSxzQkFBQTtFQUNBLDZCQUFBO0VBQ0EsV0FBQTtFQUNBLFlBQUE7RUFDQSxxQkFBQTtBQUNKO0FBQ0k7RUFDSSxVQUFBO0VBQ0EsZ0NBQUE7QUFDUjtBQUVJO0VBQ0ksVUFBQTtFQUNBLGdDQUFBO0FBQVI7QUFHSTtFQUNJLGNBQUE7RUFDQSxZQUFBO0VBQ0Esa0JBQUE7QUFEUjtBQUlJO0VBQ0ksWUFBQTtFQUNBLGNBQUE7QUFGUjtBQUtJO0VBQ0kseUJBQUE7RUFDQSxvQkFBQTtFQUNBLDhCQUFBO0VBQUEsMkJBQUE7RUFBQSxzQkFBQTtFQUNBLHVCQUFBO0VBQ0EsWUFBQTtFQUNBLDRCQUFBO0VBQ0EsY0FBQTtBQUhSO0FBS1E7RUFDSSxhQUFBO0FBSFoiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL2hvbWUvaG9tZS5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbImRpdiB7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1ldmVubHk7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgaGVpZ2h0OiAxMDAlO1xuICAgIGJhY2tncm91bmQ6IGNhZGV0Ymx1ZTtcblxuICAgICYuaGlkZGVuIHtcbiAgICAgICAgb3BhY2l0eTogMDtcbiAgICAgICAgdHJhbnNpdGlvbjogb3BhY2l0eSAwLjVzIGVhc2UtaW47XG4gICAgfVxuXG4gICAgJi52aXNpYmxlIHtcbiAgICAgICAgb3BhY2l0eTogMTtcbiAgICAgICAgdHJhbnNpdGlvbjogb3BhY2l0eSAwLjVzIGVhc2UtaW47XG4gICAgfVxuXG4gICAgaDEge1xuICAgICAgICBmb250LXNpemU6IDVlbTtcbiAgICAgICAgY29sb3I6IHdoaXRlO1xuICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgfVxuXG4gICAgcCB7XG4gICAgICAgIGNvbG9yOiB3aGl0ZTtcbiAgICAgICAgZm9udC1zaXplOiAyZW07XG4gICAgfVxuXG4gICAgYnV0dG9uIHtcbiAgICAgICAgYm9yZGVyOiAwLjFlbSBzb2xpZCB3aGl0ZTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogMC40ZW07XG4gICAgICAgIG1heC13aWR0aDogZml0LWNvbnRlbnQ7XG4gICAgICAgIGJhY2tncm91bmQ6IHRyYW5zcGFyZW50O1xuICAgICAgICBjb2xvcjogd2hpdGU7XG4gICAgICAgIGZvbnQtZmFtaWx5OiBPcGVuIFNhbnMgTGlnaHQ7XG4gICAgICAgIGZvbnQtc2l6ZTogM2VtO1xuXG4gICAgICAgICY6Zm9jdXMge1xuICAgICAgICAgICAgb3V0bGluZTogbm9uZTtcbiAgICAgICAgfVxuICAgIH1cbn1cbiJdfQ== */"] });
     return HomeComponent;
 }());
 
@@ -370,22 +373,24 @@ __webpack_require__.r(__webpack_exports__);
 
 var Player = /** @class */ (function (_super) {
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"])(Player, _super);
-    function Player(scene, maxZVel, maxYRot, maxZRot, input, particle, model) {
+    function Player(scene, maxZVel, maxYRot, maxZRot, zRotRate, input, particle, model) {
         var _this = _super.call(this, 'player', scene) || this;
         _this.input = input;
         _this.particle = particle;
         _this.model = model;
         _this.zVel = 0;
         _this.yRot = 0;
-        _this.zRot = 0;
+        _this.zRotRate = 0;
         _this.PITCH_TILT = new _babylonjs_core__WEBPACK_IMPORTED_MODULE_1__["Vector3"](_common_utils__WEBPACK_IMPORTED_MODULE_2__["default"].degreesToRads(15), 0, 0);
         _this.scene = scene;
         _this.maxZVel = maxZVel;
         _this.maxYRot = maxYRot;
         _this.maxZRot = maxZRot;
+        _this.zRotRate = zRotRate;
         _this.mesh = scene.getMeshByID('player');
         _this.mesh.setParent(_this);
         _this.initEngineTrails();
+        console.log(_this.maxZRot);
         return _this;
     }
     Object.defineProperty(Player.prototype, "playerMesh", {
@@ -413,44 +418,73 @@ var Player = /** @class */ (function (_super) {
     };
     Player.prototype.turnLeft = function (yRotRate) {
         if (this.input.keyPressed('a')) {
-            this.yRot -= yRotRate;
-            if (this.yRot < -this.maxYRot) {
+            if (this.yRot - yRotRate < -this.maxYRot) {
                 this.yRot = -this.maxYRot;
             }
+            else {
+                this.yRot -= yRotRate;
+            }
             this.rotation.y += this.yRot;
+            if (this.rotation.z + this.zRotRate > this.maxZRot) {
+                this.rotation.z = this.maxZRot;
+            }
+            else {
+                this.rotation.z += this.zRotRate;
+            }
         }
-        else {
-            this.nullTurn(yRotRate);
+        else if (!this.input.keyPressed('d')) {
+            if (this.yRot < 0) {
+                if (this.yRot + yRotRate > 0) {
+                    this.yRot = 0;
+                }
+                else {
+                    this.yRot += yRotRate;
+                }
+                this.rotation.y += this.yRot;
+            }
+            if (this.rotation.z > 0) {
+                if (this.rotation.z - this.zRotRate < 0) {
+                    this.rotation.z = 0;
+                }
+                else {
+                    this.rotation.z -= this.zRotRate;
+                }
+            }
         }
-    };
-    Player.prototype.rollLeft = function (rollRate) {
     };
     Player.prototype.turnRight = function (yRotRate) {
         if (this.input.keyPressed('d')) {
-            this.yRot += yRotRate;
-            if (this.yRot > this.maxYRot) {
+            if (this.yRot + yRotRate > this.maxYRot) {
                 this.yRot = this.maxYRot;
             }
-            this.rotation.y += this.yRot;
-        }
-        else {
-            this.nullTurn(yRotRate);
-        }
-    };
-    Player.prototype.rollRight = function () {
-    };
-    Player.prototype.nullTurn = function (yRotRate) {
-        if (!this.input.keyPressed('a') && !this.input.keyPressed('d') && this.yRot !== 0) {
-            if (this.yRot > 0) {
-                this.yRot -= yRotRate;
-                this.rotation.y += this.yRot;
-            }
-            else if (this.yRot < 0) {
+            else {
                 this.yRot += yRotRate;
+            }
+            this.rotation.y += this.yRot;
+            if (this.rotation.z - this.zRotRate < -this.maxZRot) {
+                this.rotation.z = -this.maxZRot;
+            }
+            else {
+                this.rotation.z -= this.zRotRate;
+            }
+        }
+        else if (!this.input.keyPressed('a')) {
+            if (this.yRot > 0) {
+                if (this.yRot - yRotRate < 0) {
+                    this.yRot = 0;
+                }
+                else {
+                    this.yRot -= yRotRate;
+                }
                 this.rotation.y += this.yRot;
             }
-            if (this.yRot < 0.00001 || this.yRot > -0.00001) {
-                this.yRot = 0;
+            if (this.rotation.z < 0) {
+                if (this.rotation.z + this.zRotRate > 0) {
+                    this.rotation.z = 0;
+                }
+                else {
+                    this.rotation.z += this.zRotRate;
+                }
             }
         }
     };
@@ -598,14 +632,16 @@ function SolarSystemComponent_div_1_Template(rf, ctx) { if (rf & 1) {
 } }
 var EARTH_ROTATE_PERIOD = -120;
 var FOV = 50;
-var CAMERA_DISTANCE = -1.3;
+var CAMERA_DISTANCE = -1.5;
+var CAMERA_HEIGHT = 0.3;
 var THRUST_RATE = 0.0001;
 var VEL_LAG = 0.07;
 var MAX_Z_VEL = 0.03;
 var TURN_RATE = 0.0001;
 var ROT_LAG = 0.05;
-var MAX_Y_ROT = 0.015;
-var MAX_Z_ROT = 0.001;
+var MAX_Y_ROT = 0.008;
+var MAX_Z_ROT = _common_utils__WEBPACK_IMPORTED_MODULE_5__["default"].degreesToRads(45);
+var Z_ROT_RATE = 0.005;
 var SolarSystemComponent = /** @class */ (function () {
     function SolarSystemComponent(renderEngine, modelService, camera, input, particle) {
         this.renderEngine = renderEngine;
@@ -637,8 +673,8 @@ var SolarSystemComponent = /** @class */ (function () {
                         return [4 /*yield*/, this.loadSceneObjects()];
                     case 2:
                         _b.sent();
-                        this.player = new _components_player_player__WEBPACK_IMPORTED_MODULE_6__["Player"](this.scene, MAX_Z_VEL, MAX_Y_ROT, MAX_Z_ROT, this.input, this.particle, this.modelService);
-                        this.playerCam = this.camera.createChaseCam(this.scene, this.player, CAMERA_DISTANCE, FOV);
+                        this.player = new _components_player_player__WEBPACK_IMPORTED_MODULE_6__["Player"](this.scene, MAX_Z_VEL, MAX_Y_ROT, MAX_Z_ROT, Z_ROT_RATE, this.input, this.particle, this.modelService);
+                        this.playerCam = this.camera.createChaseCam(this.scene, this.player, CAMERA_HEIGHT, CAMERA_DISTANCE, FOV);
                         this.input.initInput(this.scene);
                         this.renderEngine.startEngine(this.scene);
                         this.updateScene();
@@ -830,15 +866,15 @@ __webpack_require__.r(__webpack_exports__);
 var CameraService = /** @class */ (function () {
     function CameraService() {
     }
-    CameraService.prototype.createChaseCam = function (scene, player, distance, fov) {
+    CameraService.prototype.createChaseCam = function (scene, player, height, distance, fov) {
         var camRoot = new _babylonjs_core__WEBPACK_IMPORTED_MODULE_2__["TransformNode"]('camRoot', scene);
         camRoot.position = new _babylonjs_core__WEBPACK_IMPORTED_MODULE_2__["Vector3"](0, 0, 0);
         camRoot.rotation = new _babylonjs_core__WEBPACK_IMPORTED_MODULE_2__["Vector3"](0, 0, 0);
         var yTilt = new _babylonjs_core__WEBPACK_IMPORTED_MODULE_2__["TransformNode"]('yTilt');
         yTilt.rotation = player.PITCH_TILT;
         yTilt.parent = camRoot;
-        var camera = new _babylonjs_core_Cameras__WEBPACK_IMPORTED_MODULE_1__["UniversalCamera"]('chaseCam', new _babylonjs_core__WEBPACK_IMPORTED_MODULE_2__["Vector3"](0, 0, distance), scene);
-        camera.lockedTarget = camRoot.position;
+        var camera = new _babylonjs_core_Cameras__WEBPACK_IMPORTED_MODULE_1__["UniversalCamera"]('chaseCam', new _babylonjs_core__WEBPACK_IMPORTED_MODULE_2__["Vector3"](0, height, distance), scene);
+        camera.lockedTarget = new _babylonjs_core__WEBPACK_IMPORTED_MODULE_2__["Vector3"](camRoot.position.x, camRoot.position.y + height, camRoot.position.z);
         camera.fov = _common_utils__WEBPACK_IMPORTED_MODULE_3__["default"].degreesToRads(fov);
         camera.parent = yTilt;
         camera.minZ = 0.05;
@@ -849,7 +885,7 @@ var CameraService = /** @class */ (function () {
     CameraService.prototype.updateChaseCam = function (scene, player, velLag, rotLag) {
         var camRoot = scene.getTransformNodeByID('camRoot');
         camRoot.position = _babylonjs_core__WEBPACK_IMPORTED_MODULE_2__["Vector3"].Lerp(camRoot.position, new _babylonjs_core__WEBPACK_IMPORTED_MODULE_2__["Vector3"](player.position.x, player.position.y, player.position.z), velLag);
-        camRoot.rotation = _babylonjs_core__WEBPACK_IMPORTED_MODULE_2__["Vector3"].Lerp(camRoot.rotation, new _babylonjs_core__WEBPACK_IMPORTED_MODULE_2__["Vector3"](player.rotation.x, player.rotation.y, player.rotation.z), rotLag);
+        camRoot.rotation = _babylonjs_core__WEBPACK_IMPORTED_MODULE_2__["Vector3"].Lerp(camRoot.rotation, new _babylonjs_core__WEBPACK_IMPORTED_MODULE_2__["Vector3"](player.rotation.x, player.rotation.y, 0), rotLag);
     };
     CameraService.ɵfac = function CameraService_Factory(t) { return new (t || CameraService)(); };
     CameraService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: CameraService, factory: CameraService.ɵfac, providedIn: 'root' });
