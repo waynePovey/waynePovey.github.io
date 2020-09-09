@@ -287,7 +287,7 @@ var HomeComponent = /** @class */ (function () {
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         } if (rf & 2) {
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", ctx.initialised ? "visible" : "hidden");
-        } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["NgClass"]], styles: ["div[_ngcontent-%COMP%] {\n  align-items: center;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-evenly;\n  width: 100%;\n  height: 100%;\n  background: cadetblue;\n}\ndiv.hidden[_ngcontent-%COMP%] {\n  opacity: 0;\n  transition: opacity 0.5s ease-in;\n}\ndiv.visible[_ngcontent-%COMP%] {\n  opacity: 1;\n  transition: opacity 0.5s ease-in;\n}\ndiv[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n  font-size: 5em;\n  color: white;\n  text-align: center;\n}\ndiv[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  color: white;\n  font-size: 2em;\n}\ndiv[_ngcontent-%COMP%]   button[_ngcontent-%COMP%] {\n  border: 0.1em solid white;\n  border-radius: 0.4em;\n  max-width: -webkit-fit-content;\n  max-width: -moz-fit-content;\n  max-width: fit-content;\n  background: transparent;\n  color: white;\n  font-family: Open Sans Light;\n  font-size: 3em;\n}\ndiv[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]:focus {\n  outline: none;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9ob21lL2hvbWUuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxtQkFBQTtFQUNBLGFBQUE7RUFDQSxzQkFBQTtFQUNBLDZCQUFBO0VBQ0EsV0FBQTtFQUNBLFlBQUE7RUFDQSxxQkFBQTtBQUNKO0FBQ0k7RUFDSSxVQUFBO0VBQ0EsZ0NBQUE7QUFDUjtBQUVJO0VBQ0ksVUFBQTtFQUNBLGdDQUFBO0FBQVI7QUFHSTtFQUNJLGNBQUE7RUFDQSxZQUFBO0VBQ0Esa0JBQUE7QUFEUjtBQUlJO0VBQ0ksWUFBQTtFQUNBLGNBQUE7QUFGUjtBQUtJO0VBQ0kseUJBQUE7RUFDQSxvQkFBQTtFQUNBLDhCQUFBO0VBQUEsMkJBQUE7RUFBQSxzQkFBQTtFQUNBLHVCQUFBO0VBQ0EsWUFBQTtFQUNBLDRCQUFBO0VBQ0EsY0FBQTtBQUhSO0FBS1E7RUFDSSxhQUFBO0FBSFoiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL2hvbWUvaG9tZS5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbImRpdiB7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1ldmVubHk7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgaGVpZ2h0OiAxMDAlO1xuICAgIGJhY2tncm91bmQ6IGNhZGV0Ymx1ZTtcblxuICAgICYuaGlkZGVuIHtcbiAgICAgICAgb3BhY2l0eTogMDtcbiAgICAgICAgdHJhbnNpdGlvbjogb3BhY2l0eSAwLjVzIGVhc2UtaW47XG4gICAgfVxuXG4gICAgJi52aXNpYmxlIHtcbiAgICAgICAgb3BhY2l0eTogMTtcbiAgICAgICAgdHJhbnNpdGlvbjogb3BhY2l0eSAwLjVzIGVhc2UtaW47XG4gICAgfVxuXG4gICAgaDEge1xuICAgICAgICBmb250LXNpemU6IDVlbTtcbiAgICAgICAgY29sb3I6IHdoaXRlO1xuICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgfVxuXG4gICAgcCB7XG4gICAgICAgIGNvbG9yOiB3aGl0ZTtcbiAgICAgICAgZm9udC1zaXplOiAyZW07XG4gICAgfVxuXG4gICAgYnV0dG9uIHtcbiAgICAgICAgYm9yZGVyOiAwLjFlbSBzb2xpZCB3aGl0ZTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogMC40ZW07XG4gICAgICAgIG1heC13aWR0aDogZml0LWNvbnRlbnQ7XG4gICAgICAgIGJhY2tncm91bmQ6IHRyYW5zcGFyZW50O1xuICAgICAgICBjb2xvcjogd2hpdGU7XG4gICAgICAgIGZvbnQtZmFtaWx5OiBPcGVuIFNhbnMgTGlnaHQ7XG4gICAgICAgIGZvbnQtc2l6ZTogM2VtO1xuXG4gICAgICAgICY6Zm9jdXMge1xuICAgICAgICAgICAgb3V0bGluZTogbm9uZTtcbiAgICAgICAgfVxuICAgIH1cbn1cbiJdfQ== */"] });
+        } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["NgClass"]], styles: ["div[_ngcontent-%COMP%] {\n  align-items: center;\n  background: cadetblue;\n  box-sizing: border-box;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-evenly;\n  height: 100%;\n  overflow: auto;\n  padding: 1em;\n  width: 100%;\n}\ndiv.hidden[_ngcontent-%COMP%] {\n  opacity: 0;\n  transition: opacity 0.5s ease-in;\n}\ndiv.visible[_ngcontent-%COMP%] {\n  opacity: 1;\n  transition: opacity 0.5s ease-in;\n}\ndiv[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n  font-size: 5em;\n  color: white;\n  text-align: center;\n}\ndiv[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  color: white;\n  font-size: 2em;\n  text-align: center;\n}\ndiv[_ngcontent-%COMP%]   button[_ngcontent-%COMP%] {\n  border: 0.1em solid white;\n  border-radius: 0.4em;\n  max-width: -webkit-fit-content;\n  max-width: -moz-fit-content;\n  max-width: fit-content;\n  background: transparent;\n  color: white;\n  font-family: Open Sans Light;\n  font-size: 3em;\n}\ndiv[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]:focus {\n  outline: none;\n}\n@media only screen and (max-width: 600px) {\n  div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n    font-size: 3em;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9ob21lL2hvbWUuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxtQkFBQTtFQUNBLHFCQUFBO0VBQ0Esc0JBQUE7RUFDQSxhQUFBO0VBQ0Esc0JBQUE7RUFDQSw2QkFBQTtFQUNBLFlBQUE7RUFDQSxjQUFBO0VBQ0EsWUFBQTtFQUNBLFdBQUE7QUFDSjtBQUNJO0VBQ0ksVUFBQTtFQUNBLGdDQUFBO0FBQ1I7QUFFSTtFQUNJLFVBQUE7RUFDQSxnQ0FBQTtBQUFSO0FBR0k7RUFDSSxjQUFBO0VBQ0EsWUFBQTtFQUNBLGtCQUFBO0FBRFI7QUFJSTtFQUNJLFlBQUE7RUFDQSxjQUFBO0VBQ0Esa0JBQUE7QUFGUjtBQUtJO0VBQ0kseUJBQUE7RUFDQSxvQkFBQTtFQUNBLDhCQUFBO0VBQUEsMkJBQUE7RUFBQSxzQkFBQTtFQUNBLHVCQUFBO0VBQ0EsWUFBQTtFQUNBLDRCQUFBO0VBQ0EsY0FBQTtBQUhSO0FBS1E7RUFDSSxhQUFBO0FBSFo7QUFRQTtFQUdRO0lBQ0ksY0FBQTtFQVBWO0FBQ0YiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL2hvbWUvaG9tZS5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbImRpdiB7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBiYWNrZ3JvdW5kOiBjYWRldGJsdWU7XG4gICAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1ldmVubHk7XG4gICAgaGVpZ2h0OiAxMDAlO1xuICAgIG92ZXJmbG93OiBhdXRvO1xuICAgIHBhZGRpbmc6IDFlbTtcbiAgICB3aWR0aDogMTAwJTtcblxuICAgICYuaGlkZGVuIHtcbiAgICAgICAgb3BhY2l0eTogMDtcbiAgICAgICAgdHJhbnNpdGlvbjogb3BhY2l0eSAwLjVzIGVhc2UtaW47XG4gICAgfVxuXG4gICAgJi52aXNpYmxlIHtcbiAgICAgICAgb3BhY2l0eTogMTtcbiAgICAgICAgdHJhbnNpdGlvbjogb3BhY2l0eSAwLjVzIGVhc2UtaW47XG4gICAgfVxuXG4gICAgaDEge1xuICAgICAgICBmb250LXNpemU6IDVlbTtcbiAgICAgICAgY29sb3I6IHdoaXRlO1xuICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgfVxuXG4gICAgcCB7XG4gICAgICAgIGNvbG9yOiB3aGl0ZTtcbiAgICAgICAgZm9udC1zaXplOiAyZW07XG4gICAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICB9XG5cbiAgICBidXR0b24ge1xuICAgICAgICBib3JkZXI6IDAuMWVtIHNvbGlkIHdoaXRlO1xuICAgICAgICBib3JkZXItcmFkaXVzOiAwLjRlbTtcbiAgICAgICAgbWF4LXdpZHRoOiBmaXQtY29udGVudDtcbiAgICAgICAgYmFja2dyb3VuZDogdHJhbnNwYXJlbnQ7XG4gICAgICAgIGNvbG9yOiB3aGl0ZTtcbiAgICAgICAgZm9udC1mYW1pbHk6IE9wZW4gU2FucyBMaWdodDtcbiAgICAgICAgZm9udC1zaXplOiAzZW07XG5cbiAgICAgICAgJjpmb2N1cyB7XG4gICAgICAgICAgICBvdXRsaW5lOiBub25lO1xuICAgICAgICB9XG4gICAgfVxufVxuXG5AbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDYwMHB4KSB7XG5cbiAgICBkaXYge1xuICAgICAgICBoMSB7XG4gICAgICAgICAgICBmb250LXNpemU6IDNlbTtcbiAgICAgICAgfVxuICAgIH1cbiAgfVxuIl19 */"] });
     return HomeComponent;
 }());
 
@@ -390,7 +390,6 @@ var Player = /** @class */ (function (_super) {
         _this.mesh = scene.getMeshByID('player');
         _this.mesh.setParent(_this);
         _this.initEngineTrails();
-        console.log(_this.maxZRot);
         return _this;
     }
     Object.defineProperty(Player.prototype, "playerMesh", {
@@ -400,8 +399,54 @@ var Player = /** @class */ (function (_super) {
         enumerable: false,
         configurable: true
     });
+    Object.defineProperty(Player.prototype, "joystickPressed", {
+        get: function () {
+            return this.input.lJoystickPressed() || this.input.rJoystickPressed();
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(Player.prototype, "tPressed", {
+        get: function () {
+            return this.input.keyPressed('w') || this.joystickPressed;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(Player.prototype, "lPressed", {
+        get: function () {
+            return this.input.keyPressed('a') || this.joystickPressed;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(Player.prototype, "rPressed", {
+        get: function () {
+            return this.input.keyPressed('d') || this.joystickPressed;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Player.prototype.joystickThrust = function (thrustRate) {
+        if (this.input.lJoystickPressed()) {
+            this.thrust(this.input.lJoystick.deltaPosition.y * (this.scene.getEngine().getDeltaTime() / 1000) * thrustRate);
+        }
+        if (this.input.rJoystickPressed()) {
+            this.thrust(-(this.input.rJoystick.deltaPosition.y / 1000000));
+        }
+    };
+    Player.prototype.joystickTurn = function () {
+        if (this.input.lJoystickPressed()) {
+            this.turnLeft(this.input.rJoystick.deltaPosition.x / 1000000);
+            this.turnRight(this.input.rJoystick.deltaPosition.x / 1000000);
+        }
+        if (this.input.rJoystickPressed()) {
+            this.turnLeft(this.input.rJoystick.deltaPosition.x / 1000000);
+            this.turnRight(this.input.rJoystick.deltaPosition.x / 1000000);
+        }
+    };
     Player.prototype.thrust = function (zRate) {
-        if (this.input.keyPressed('w')) {
+        if (this.tPressed) {
             this.zVel += zRate;
             if (this.zVel > this.maxZVel) {
                 this.zVel = this.maxZVel;
@@ -417,7 +462,7 @@ var Player = /** @class */ (function (_super) {
         }
     };
     Player.prototype.turnLeft = function (yRotRate) {
-        if (this.input.keyPressed('a')) {
+        if (this.lPressed) {
             if (this.yRot - yRotRate < -this.maxYRot) {
                 this.yRot = -this.maxYRot;
             }
@@ -453,7 +498,7 @@ var Player = /** @class */ (function (_super) {
         }
     };
     Player.prototype.turnRight = function (yRotRate) {
-        if (this.input.keyPressed('d')) {
+        if (this.rPressed) {
             if (this.yRot + yRotRate > this.maxYRot) {
                 this.yRot = this.maxYRot;
             }
@@ -489,7 +534,7 @@ var Player = /** @class */ (function (_super) {
         }
     };
     Player.prototype.toggleTrails = function () {
-        if (this.input.keyPressed('w')) {
+        if (this.tPressed) {
             this.lEng.start();
             this.rEng.start();
         }
@@ -517,7 +562,7 @@ var Player = /** @class */ (function (_super) {
             minEmitPower: 1,
             maxEmitPower: 3,
             updateSpeed: 0.001,
-            emitter: this.scene.getMeshByID('left_engine'),
+            emitter: this.scene.getMeshByID('leftEngine'),
             gpuCap: 2000,
             cpuCap: 2000
         }));
@@ -539,17 +584,17 @@ var Player = /** @class */ (function (_super) {
             minEmitPower: 1,
             maxEmitPower: 3,
             updateSpeed: 0.001,
-            emitter: this.scene.getMeshByID('right_engine'),
+            emitter: this.scene.getMeshByID('rightEngine'),
             gpuCap: 2000,
             cpuCap: 2000
         }));
     };
     Player.prototype.animateEngines = function () {
-        this.model.rotateMesh(this.scene, 'left_engine', new _babylonjs_core__WEBPACK_IMPORTED_MODULE_1__["Vector3"](0, 1, 1), 3, this.scene.getEngine().getFps());
-        this.model.rotateMesh(this.scene, 'right_engine', new _babylonjs_core__WEBPACK_IMPORTED_MODULE_1__["Vector3"](0, -1, -1), 3, this.scene.getEngine().getFps());
+        this.model.rotateMesh(this.scene, 'leftEngine', new _babylonjs_core__WEBPACK_IMPORTED_MODULE_1__["Vector3"](0, 1, 1), 3, this.scene.getEngine().getFps());
+        this.model.rotateMesh(this.scene, 'rightEngine', new _babylonjs_core__WEBPACK_IMPORTED_MODULE_1__["Vector3"](0, -1, -1), 3, this.scene.getEngine().getFps());
     };
     Player.prototype.moveGuns = function () {
-        this.model.rotateMesh(this.scene, 'left_gun', new _babylonjs_core__WEBPACK_IMPORTED_MODULE_1__["Vector3"](0, 1, 1), 3, this.scene.getEngine().getFps());
+        this.model.rotateMesh(this.scene, 'leftGun', new _babylonjs_core__WEBPACK_IMPORTED_MODULE_1__["Vector3"](0, 1, 1), 3, this.scene.getEngine().getFps());
     };
     return Player;
 }(_babylonjs_core__WEBPACK_IMPORTED_MODULE_1__["TransformNode"]));
@@ -700,6 +745,7 @@ var SolarSystemComponent = /** @class */ (function () {
                         sceneContainer.addAllToScene();
                         this.createCloudInstances();
                         this.loadPlane();
+                        this.createDarkPlanetRing();
                         this.createLighting(this.scene);
                         return [2 /*return*/];
                 }
@@ -721,15 +767,18 @@ var SolarSystemComponent = /** @class */ (function () {
             _this.player.turnLeft(TURN_RATE);
             _this.player.turnRight(TURN_RATE);
             _this.player.toggleTrails();
+            _this.player.joystickThrust(THRUST_RATE);
+            _this.player.joystickTurn();
         });
     };
     SolarSystemComponent.prototype.updateModels = function () {
         // BODY ROTATIONS
         this.modelService.rotateMesh(this.scene, 'earth', new _babylonjs_core__WEBPACK_IMPORTED_MODULE_2__["Vector3"](0, 1, 0), EARTH_ROTATE_PERIOD, this.renderEngine.engine.getFps());
-        this.modelService.rotateMesh(this.scene, 'volcano_world', new _babylonjs_core__WEBPACK_IMPORTED_MODULE_2__["Vector3"](0, 1, 0), EARTH_ROTATE_PERIOD, this.renderEngine.engine.getFps());
+        this.modelService.rotateMesh(this.scene, 'volcanoWorld', new _babylonjs_core__WEBPACK_IMPORTED_MODULE_2__["Vector3"](0, 1, 0), EARTH_ROTATE_PERIOD, this.renderEngine.engine.getFps());
         // EARTH SATS
         this.modelService.rotateTransformNode(this.scene, 'coPlane', new _babylonjs_core__WEBPACK_IMPORTED_MODULE_2__["Vector3"](0, 1, 0), 30, this.renderEngine.engine.getFps());
         this.modelService.rotateTransformNode(this.scene, 'coMoon', new _babylonjs_core__WEBPACK_IMPORTED_MODULE_2__["Vector3"](0, 1, 0), 30, this.renderEngine.engine.getFps());
+        this.modelService.rotateTransformNode(this.scene, 'coDarkRock', new _babylonjs_core__WEBPACK_IMPORTED_MODULE_2__["Vector3"](0, 1, 0), 120, this.renderEngine.engine.getFps());
         this.player.animateEngines();
     };
     SolarSystemComponent.prototype.createCloudInstances = function () {
@@ -747,12 +796,30 @@ var SolarSystemComponent = /** @class */ (function () {
             newCloud.rotation = new _babylonjs_core__WEBPACK_IMPORTED_MODULE_2__["Vector3"](0, -theta, -phi);
         }
     };
+    SolarSystemComponent.prototype.createDarkPlanetRing = function () {
+        var rock = this.scene.getMeshByID('darkRock');
+        rock.isVisible = false;
+        this.modelService.createTransformNode(this.scene, 'darkRock', 'darkWorld');
+        var coDarkRock = this.scene.getTransformNodeByID('coDarkRock');
+        coDarkRock.rotation = new _babylonjs_core__WEBPACK_IMPORTED_MODULE_2__["Vector3"](0, 0, 0);
+        for (var i = 0; i < 200; i++) {
+            var newRock = rock.createInstance('darkRock' + i);
+            newRock.setParent(coDarkRock);
+            var radius = _common_utils__WEBPACK_IMPORTED_MODULE_5__["default"].randomInRange(6, 10);
+            var theta = _common_utils__WEBPACK_IMPORTED_MODULE_5__["default"].degreesToRads(_common_utils__WEBPACK_IMPORTED_MODULE_5__["default"].random(360));
+            var phi = _common_utils__WEBPACK_IMPORTED_MODULE_5__["default"].degreesToRads(_common_utils__WEBPACK_IMPORTED_MODULE_5__["default"].randomInRange(83, 97));
+            newRock.position = _common_utils__WEBPACK_IMPORTED_MODULE_5__["default"].pointOnSphere(radius, phi, theta);
+            var scale = _common_utils__WEBPACK_IMPORTED_MODULE_5__["default"].randomInRange(0.1, 0.3);
+            newRock.scaling = new _babylonjs_core__WEBPACK_IMPORTED_MODULE_2__["Vector3"](scale, scale, scale);
+            newRock.rotation = new _babylonjs_core__WEBPACK_IMPORTED_MODULE_2__["Vector3"](0, -theta, -phi);
+        }
+    };
     SolarSystemComponent.prototype.loadPlane = function () {
         var plane = this.scene.getMeshByID('plane');
         var coPlane = this.modelService.createTransformNode(this.scene, 'plane', 'earth');
         coPlane.position = new _babylonjs_core__WEBPACK_IMPORTED_MODULE_2__["Vector3"](0, 0, 0);
-        coPlane.rotation = new _babylonjs_core__WEBPACK_IMPORTED_MODULE_2__["Vector3"](0, 0, 0);
-        plane.rotation = new _babylonjs_core__WEBPACK_IMPORTED_MODULE_2__["Vector3"](0, 0, 0);
+        coPlane.rotation = new _babylonjs_core__WEBPACK_IMPORTED_MODULE_2__["Vector3"](_common_utils__WEBPACK_IMPORTED_MODULE_5__["default"].degreesToRads(-10), 0, 0);
+        plane.rotation = new _babylonjs_core__WEBPACK_IMPORTED_MODULE_2__["Vector3"](_common_utils__WEBPACK_IMPORTED_MODULE_5__["default"].degreesToRads(-10), 0, 0);
         plane.setParent(coPlane);
         var lEngine = this.particle.createParticleTrail(this.scene, new _models_particle_trail_model__WEBPACK_IMPORTED_MODULE_7__["ParticleTrailModel"]({
             name: 'lEng',
@@ -930,9 +997,18 @@ var InputService = /** @class */ (function () {
         scene.actionManager.registerAction(new _babylonjs_core__WEBPACK_IMPORTED_MODULE_1__["ExecuteCodeAction"](_babylonjs_core__WEBPACK_IMPORTED_MODULE_1__["ActionManager"].OnKeyUpTrigger, function (evt) {
             _this.inputMap[evt.sourceEvent.key] = evt.sourceEvent.type === 'keydown';
         }));
+        this.lJoystick = new _babylonjs_core__WEBPACK_IMPORTED_MODULE_1__["VirtualJoystick"](true);
+        this.rJoystick = new _babylonjs_core__WEBPACK_IMPORTED_MODULE_1__["VirtualJoystick"](false);
+        _babylonjs_core__WEBPACK_IMPORTED_MODULE_1__["VirtualJoystick"].Canvas.style.zIndex = '-1';
     };
     InputService.prototype.keyPressed = function (key) {
         return this.inputMap[key];
+    };
+    InputService.prototype.lJoystickPressed = function () {
+        return this.lJoystick.pressed;
+    };
+    InputService.prototype.rJoystickPressed = function () {
+        return this.lJoystick.pressed;
     };
     InputService.ɵfac = function InputService_Factory(t) { return new (t || InputService)(); };
     InputService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: InputService, factory: InputService.ɵfac, providedIn: 'root' });
