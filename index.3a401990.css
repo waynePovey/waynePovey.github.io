@@ -1,0 +1,63 @@
+:root {
+  --white: #ffffff;
+  --red: red;
+}
+
+@font-face {
+  font-family: "Lato Regular";
+  src: url("Lato-Regular.87939118.ttf");
+}
+
+html,
+body {
+  font-family: "Lato Regular";
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+*:focus {
+  outline: none;
+}
+
+#main {
+  box-sizing: border-box;
+  display: flex;
+  height: 100%;
+  padding: 1em;
+  width: 100%;
+}
+
+#main div {
+  display: flex;
+  flex-direction: column;
+}
+
+#main div p {
+  color: black;
+  font-family: "Lato Light";
+  margin: 0;
+}
+
+#main div p#title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+#main div p#name {
+  font-size: 1.4em;
+}
+
+#main div div {
+  padding: 1em;
+}
+
+#main div div img {
+  max-width: 100%;
+}
+
+#main canvas {
+  border-radius: 0.4em;
+  cursor: pointer;
+}
+/*# sourceMappingURL=index.3a401990.css.map */
